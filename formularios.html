@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body style="background-color: aliceblue; font-size: large;">
+    <!-- (header>nav>ul>(li>a[href="#"]{Link $})*6)+main+aside+footer -->
+    <header>
+        <h1>Formularios</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+                <li><a href="#">Link 6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Main</h2>
+        <form action="">
+            
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <br>
+            <div>
+                <label for="fechaNac">Fecha nacimiento:</label>
+                <input type="date" name="fechaNac" id="fechaNac">
+            </div>
+            <br>
+            <div>
+                <label for="foto">Foto de perfil:</label>
+                <input type="file" name="foto" id="foto">
+            </div>
+            <br>
+            <div>
+                <label for="semestre">Semestre:</label>
+                <input type="range" min="1" max="9" name="semestre" id="semestre">
+            </div>
+            <br>
+            <div>
+                <label for="colorFav">Color favorito:</label>
+                <input type="color" name="colorFav" id="colorFav">
+            </div>
+            <br>
+            <div>
+                <label for="semanaN">Semana nacimiento:</label>
+                <input type="week" name="semanaN" id="semanaN">
+            </div>
+            <br>
+            <div>
+                <label for="ob">Observaciones:</label>
+                <textarea name="ob" id="ob" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="curso">Curso:</label>
+                <select name="curso" id="curso">
+                    <option value="3">Python</option>
+                    <option value="45">Java</option>
+                    <option value="32">C#</option>
+                    <option value="4">R</option>
+                    <option value="100">Julia</option>
+                </select>
+            </div>
+
+        </form>
+    </main>
+    <aside>
+        <h2>Aside</h2>
+    </aside>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+</html>
